@@ -1,0 +1,27 @@
+# ARTEX English text TSec Benchmark English text —— English text build + run。
+# English text docker-compose.yml(English text:artex+postgres)English text。
+# English text：
+#   cp bench/.env.example bench/.env   # English text LLM_API_KEY / BENCHMARK_TOKEN English text
+#   docker compose -f docker-compose.bench.yml up --build      # English text(English text)
+#   docker compose -f docker-compose.bench.yml up --build -d   # English text
+#   docker compose -f docker-compose.bench.yml logs -f
+#   docker compose -f docker-compose.bench.yml down            # English text(English text -v English text)
+# English text：http://localhost:8787（English text ADMIN_PASSWORD English text）
+
+services:
+  artex-bench:
+    build:
+      context: .
+      dockerfile: Dockerfile.bench
+    image: artex-bench:latest
+    container_name: artex-bench
+    env_file:
+      - bench/.env
+    # English text：English text，English text/VPN English text。
+    # host English text ports English text，English text：8787(UI/API)、8788(English text)、
+    # English text PostgreSQL 5432 —— English text（English text）。
+    network_mode: host
+    restart: "no"
+
+volumes:
+  artex_bench_data:

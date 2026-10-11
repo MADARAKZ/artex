@@ -1,0 +1,23 @@
+{
+  "_comment": "English text config.json（English text ARTEX_CONFIG English text）。English text database English text skill_dir English text；LLM English text，English text。",
+
+  "_comment_database": "PostgreSQL English text。English text：English text ARTEX_PG_DSN > English text database。English text：(A) English text；(B) English text database.dsn English text。",
+  "database": {
+    "host": "127.0.0.1",
+    "port": 5433,
+    "user": "artex",
+    "password": "",
+    "dbname": "artex",
+    "sslmode": "disable"
+  },
+
+  "_comment_database_dsn": "English text (B)：English text database，English text DSN。dsn English text。",
+  "_example_database_dsn": {
+    "database": {
+      "dsn": "postgres://user:pass@db.example.com:5432/artex?sslmode=require"
+    }
+  },
+
+  "_comment_skill_dir": "skill English text（English text skill，English text SKILL.md）。English text：English text ARTEX_SKILL_DIR > English text > English text（English text skills/）。English text。English text。",
+  "skill_dir": "/opt/artex/skills"
+}

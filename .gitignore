@@ -1,0 +1,60 @@
+# backend
+/data/
+*.db
+*.db-wal
+*.db-shm
+config.json
+scheduler_state.json
+__pycache__/
+*.pyc
+*.pyo
+
+# frontend
+web/node_modules/
+web/.next/
+web/tsconfig.tsbuildinfo
+web/next-env.d.ts
+*.local
+
+# development tools
+.playwright-mcp/
+.playwright-cli/
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# docs
+/docs/
+
+# os
+.DS_Store
+Thumbs.db
+
+# claude code local state
+.claude/
+
+# English text
+/artex
+# English text（English text / English text / English text / English text）
+/artex.new
+/artex.new.sha256
+/artex.old
+/artex.failed
+/artex.upgrade.json
+/server/webui/dist/
+/dist/
+
+# JWT English text（English text，English text，English text）
+/jwt.key
+
+# Docker English text（English text/English text，English text）
+.env
+
+# English text/English text（English text，English text）
+*-events.csv
+
+# bench English text（English text，English text）
+/bench/
+/Dockerfile.bench
+/Dockerfile.bench.v2
